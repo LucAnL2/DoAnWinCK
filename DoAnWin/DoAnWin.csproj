@@ -1,0 +1,864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88B9E675-B9C6-4D68-A9BE-2A9948A9E757}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoAnWin</RootNamespace>
+    <AssemblyName>DoAnWin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Bunifu\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChildFormUser\FComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FComment.Designer.cs">
+      <DependentUpon>FComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FCommentInUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FCommentInUser.Designer.cs">
+      <DependentUpon>FCommentInUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FDetailWorkerInUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FDetailWorkerInUser.Designer.cs">
+      <DependentUpon>FDetailWorkerInUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FHire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FHire.Designer.cs">
+      <DependentUpon>FHire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FHistoryWorkerInUsercs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FHistoryWorkerInUsercs.Designer.cs">
+      <DependentUpon>FHistoryWorkerInUsercs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FLike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FLike.Designer.cs">
+      <DependentUpon>FLike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FListLike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FListLike.Designer.cs">
+      <DependentUpon>FListLike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FListWorkerHiring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FListWorkerHiring.Designer.cs">
+      <DependentUpon>FListWorkerHiring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FPay.Designer.cs">
+      <DependentUpon>FPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FPostJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FPostJob.Designer.cs">
+      <DependentUpon>FPostJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FRechargeMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FRechargeMoney.Designer.cs">
+      <DependentUpon>FRechargeMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FTopWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FTopWorker.Designer.cs">
+      <DependentUpon>FTopWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserHired.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserHired.Designer.cs">
+      <DependentUpon>FUserHired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserHome.Designer.cs">
+      <DependentUpon>FUserHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserInfo.Designer.cs">
+      <DependentUpon>FUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserPostJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserPostJob.Designer.cs">
+      <DependentUpon>FUserPostJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserSeekWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\FUserSeekWorker.Designer.cs">
+      <DependentUpon>FUserSeekWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\UCUserPostJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\UCUserPostJob.Designer.cs">
+      <DependentUpon>UCUserPostJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\FDetailInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\FDetailInfo.Designer.cs">
+      <DependentUpon>FDetailInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\FHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\FHistory.Designer.cs">
+      <DependentUpon>FHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerContainComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerContainComment.Designer.cs">
+      <DependentUpon>FWorkerContainComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerInfo.Designer.cs">
+      <DependentUpon>FWorkerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerNotification.Designer.cs">
+      <DependentUpon>FWorkerNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerSeekJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerSeekJob.Designer.cs">
+      <DependentUpon>FWorkerSeekJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerUploadInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerUploadInfo.Designer.cs">
+      <DependentUpon>FWorkerUploadInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerWorking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\FWorkerWorking.Designer.cs">
+      <DependentUpon>FWorkerWorking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCCandidate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCCandidate.Designer.cs">
+      <DependentUpon>UCCandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCWorkerSeekJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCWorkerSeekJob.Designer.cs">
+      <DependentUpon>UCWorkerSeekJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAOClass\CandidateDAO.cs" />
+    <Compile Include="DAOClass\CommentDAO.cs" />
+    <Compile Include="DAOClass\FormDAO.cs" />
+    <Compile Include="DAOClass\JobDAO.cs" />
+    <Compile Include="DAOClass\LikeDAO.cs" />
+    <Compile Include="DAOClass\PersonDAO.cs" />
+    <Compile Include="DAOClass\UserDAO.cs" />
+    <Compile Include="DAOClass\UserPostJobDAO.cs" />
+    <Compile Include="DAOClass\WorkerDAO.cs" />
+    <Compile Include="FForgotPasswordAndRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FForgotPasswordAndRegister.Designer.cs">
+      <DependentUpon>FForgotPasswordAndRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLoading.Designer.cs">
+      <DependentUpon>FLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUser.Designer.cs">
+      <DependentUpon>FUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWorker.Designer.cs">
+      <DependentUpon>FWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalClass\DBConnection.cs" />
+    <Compile Include="NormalClass\Modify.cs" />
+    <Compile Include="NormalClass\StaticPropertyAndField.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyClass\Account.cs" />
+    <Compile Include="PropertyClass\Candidate.cs" />
+    <Compile Include="PropertyClass\Comment.cs" />
+    <Compile Include="PropertyClass\Job.cs" />
+    <Compile Include="PropertyClass\Like.cs" />
+    <Compile Include="PropertyClass\Person.cs" />
+    <Compile Include="PropertyClass\Picture.cs" />
+    <Compile Include="PropertyClass\User.cs" />
+    <Compile Include="PropertyClass\UserPostJob.cs" />
+    <Compile Include="PropertyClass\Worker.cs" />
+    <Compile Include="ChildFormUser\UCHiredInUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\UCHiredInUser.Designer.cs">
+      <DependentUpon>UCHiredInUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCLike.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCLike.Designer.cs">
+      <DependentUpon>UCLike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\UComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\UComment.Designer.cs">
+      <DependentUpon>UComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCTopWorker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCTopWorker.Designer.cs">
+      <DependentUpon>UCTopWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCUserHireWorker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCUserHireWorker.Designer.cs">
+      <DependentUpon>UCUserHireWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCWorkedInWorker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCWorkedInWorker.Designer.cs">
+      <DependentUpon>UCWorkedInWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\UCWorkerUploadInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\UCWorkerUploadInfo.Designer.cs">
+      <DependentUpon>UCWorkerUploadInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCWorking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormWorker\UCWorking.Designer.cs">
+      <DependentUpon>UCWorking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildFormUser\UCWorkingWorker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildFormUser\UCWorkingWorker.Designer.cs">
+      <DependentUpon>UCWorkingWorker.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChildFormUser\FComment.resx">
+      <DependentUpon>FComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FCommentInUser.resx">
+      <DependentUpon>FCommentInUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FDetailWorkerInUser.resx">
+      <DependentUpon>FDetailWorkerInUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FHire.resx">
+      <DependentUpon>FHire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FHistoryWorkerInUsercs.resx">
+      <DependentUpon>FHistoryWorkerInUsercs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FLike.resx">
+      <DependentUpon>FLike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FListLike.resx">
+      <DependentUpon>FListLike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FListWorkerHiring.resx">
+      <DependentUpon>FListWorkerHiring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FPay.resx">
+      <DependentUpon>FPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FPostJob.resx">
+      <DependentUpon>FPostJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FRechargeMoney.resx">
+      <DependentUpon>FRechargeMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FTopWorker.resx">
+      <DependentUpon>FTopWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FUserHired.resx">
+      <DependentUpon>FUserHired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FUserHome.resx">
+      <DependentUpon>FUserHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FUserInfo.resx">
+      <DependentUpon>FUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FUserPostJob.resx">
+      <DependentUpon>FUserPostJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\FUserSeekWorker.resx">
+      <DependentUpon>FUserSeekWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\UCUserPostJob.resx">
+      <DependentUpon>UCUserPostJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\FDetailInfo.resx">
+      <DependentUpon>FDetailInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\FHistory.resx">
+      <DependentUpon>FHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\FWorkerContainComment.resx">
+      <DependentUpon>FWorkerContainComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\FWorkerInfo.resx">
+      <DependentUpon>FWorkerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\FWorkerNotification.resx">
+      <DependentUpon>FWorkerNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\FWorkerSeekJob.resx">
+      <DependentUpon>FWorkerSeekJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\FWorkerUploadInfo.resx">
+      <DependentUpon>FWorkerUploadInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\FWorkerWorking.resx">
+      <DependentUpon>FWorkerWorking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\UCCandidate.resx">
+      <DependentUpon>UCCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\UCWorkerSeekJob.resx">
+      <DependentUpon>UCWorkerSeekJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FForgotPasswordAndRegister.resx">
+      <DependentUpon>FForgotPasswordAndRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoading.resx">
+      <DependentUpon>FLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUser.resx">
+      <DependentUpon>FUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FWorker.resx">
+      <DependentUpon>FWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ChildFormUser\UCHiredInUser.resx">
+      <DependentUpon>UCHiredInUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCLike.resx">
+      <DependentUpon>UCLike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\UComment.resx">
+      <DependentUpon>UComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCTopWorker.resx">
+      <DependentUpon>UCTopWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\UCUserHireWorker.resx">
+      <DependentUpon>UCUserHireWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\UCWorkedInWorker.resx">
+      <DependentUpon>UCWorkedInWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\UCWorkerUploadInfo.resx">
+      <DependentUpon>UCWorkerUploadInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormWorker\UCWorking.resx">
+      <DependentUpon>UCWorking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildFormUser\UCWorkingWorker.resx">
+      <DependentUpon>UCWorkingWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RarelyProgrammingForm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageLogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dangky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dangkys2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quenmatkhau.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220 %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-home-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-home-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuyenthogra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuyenthowhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historywhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-burger %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thomay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thomaygray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thodien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThodienGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThosonGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thoson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThoDieuKhacgray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thodieukhac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thoruaxe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thokhac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thokhac1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\envelope %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taotaikhoan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twiiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadingGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avartar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changepassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changepasswordWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redchart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %287%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charcircle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repairWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmarkWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monyy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timviec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timviecwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %287%29n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightTim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heartWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downTim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downTrang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkboxTim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkboxTrang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xxam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmarktrang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmarkdo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowgray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowShortTim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowLongTim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angle-rightxam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angle-leftxam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chatGradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plusTim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caret-rightPhai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caret-leftTrai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackTim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackTrang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\!1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Working.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nganhang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listWorker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThanhToan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-crossed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowShortTim1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newtim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newtrang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newdowntim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newchecktim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newsquaretim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topgra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brifJob.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

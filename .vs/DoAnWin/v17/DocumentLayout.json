@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DataD\\c#\\DoAnWin(CuoiKi)1\\DoAnWin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88B9E675-B9C6-4D68-A9BE-2A9948A9E757}|DoAnWin\\DoAnWin.csproj|d:\\datad\\c#\\doanwin(cuoiki)1\\doanwin\\doanwin\\childformuser\\ftopworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88B9E675-B9C6-4D68-A9BE-2A9948A9E757}|DoAnWin\\DoAnWin.csproj|solutionrelative:doanwin\\childformuser\\ftopworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B9E675-B9C6-4D68-A9BE-2A9948A9E757}|DoAnWin\\DoAnWin.csproj|D:\\DataD\\c#\\DoAnWin(CuoiKi)1\\DoAnWin\\doanwin\\floading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88B9E675-B9C6-4D68-A9BE-2A9948A9E757}|DoAnWin\\DoAnWin.csproj|solutionrelative:doanwin\\floading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 248,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 108,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FTopWorker.cs [Design]",
+              "DocumentMoniker": "D:\\DataD\\c#\\DoAnWin(CuoiKi)1\\DoAnWin\\DoAnWin\\ChildFormUser\\FTopWorker.cs",
+              "RelativeDocumentMoniker": "DoAnWin\\ChildFormUser\\FTopWorker.cs",
+              "ToolTip": "D:\\DataD\\c#\\DoAnWin(CuoiKi)1\\DoAnWin\\DoAnWin\\ChildFormUser\\FTopWorker.cs [Design]",
+              "RelativeToolTip": "DoAnWin\\ChildFormUser\\FTopWorker.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T18:44:09.962Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FLoading.cs [Design]",
+              "DocumentMoniker": "D:\\DataD\\c#\\DoAnWin(CuoiKi)1\\DoAnWin\\DoAnWin\\FLoading.cs",
+              "RelativeDocumentMoniker": "DoAnWin\\FLoading.cs",
+              "ToolTip": "D:\\DataD\\c#\\DoAnWin(CuoiKi)1\\DoAnWin\\DoAnWin\\FLoading.cs [Design]",
+              "RelativeToolTip": "DoAnWin\\FLoading.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T18:10:56.412Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
